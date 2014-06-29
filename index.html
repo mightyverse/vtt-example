@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<title>Ella tiene hambre.</title>
+	<meta name="description" content="Sample HTML5 code that makes use of a WebVTT file and playr to add subtitles to a video clip" />
+	<!-- <link rel="stylesheet" href="playr.css" />-->
+	<style>
+		body { font-family:Verdana,Arial; }
+		a { text-decoration:none; color:#666; }
+		h1 { font-size:20px; padding:0; }
+		header p { font-size:12px; }
+		.playr_controls { margin-top:-11px; }
+		video { width:360px; height:260px; }
+		small { color:#aaa; font-size:11px; display:block; }
+		.highlight { color:#4169e1; font-weight:bold; text-transform:uppercase; background-color:#fff; padding:0 2px; }
+		footer { font-size:11px; color:#aaa; }
+	</style>
+<!--	<script src="playr.min.js"></script>-->
+</head>
+<body>
+	<header>
+		<h1>Ella tiene hambre.</h1>
+		<p>(inspired by <a href="http://www.iandevlin.com/blog/2011/05/html5/webvtt-and-video-subtitle">WebVTT and Video Subtitles - iandevlin.com</a>)</p>
+	</header>
+	<p>This video uses the following <a href="upc-video-subtitles-en.vtt">WebVTT file</a>.</p>
+	<video id="vTest" class="playr_video" controls preload="metadata">
+		<source src='http://www.emoclients.com/mvm/070614_Mayra_Pulido/e7b5d59e-21a3-4213-b547.mov' type='video/qt'>
+		<track label="Español" kind="subtitles" srclang="en" src="subtitle-es.vtt" default>
+	</video>
+	<small>copyright &copy; Mightyverse, Inc. 2014</small>
+	<footer>
+		<p>by <a href="http://twitter.com/iandevlin">ian devlin</a></p>
+	</footer>
+</body>
+</html>
